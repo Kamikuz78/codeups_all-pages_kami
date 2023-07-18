@@ -1,15 +1,14 @@
 @use "global" as *;
 
-.card__info {
+.info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: rem(14);
   line-height: calc(26 / 14);
-  margin-top: auto;
-  padding: rem(7) rem(23) rem(16);
+
 }
-.card__category {
+.info__category {
   background-color: #ffea2e;
   color: $black;
   padding: 0 rem(5);

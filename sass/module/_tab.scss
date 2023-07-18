@@ -3,7 +3,6 @@
 .tab {
   display: flex;
   flex-wrap: wrap;
-  // padding: rem(10) 6px rem(10) rem(20);
   column-gap: 23px;
   row-gap: 17px;
   align-items: center;
@@ -17,10 +16,20 @@
   order: -1;
   font-size: rem(16);
   letter-spacing: calc(2 / 16) * 1em;
+  @include mq(md) {
+    transition: 0.3s;
+  }
 }
-// .tab-label + .tab-label {
-//   margin-right: 7px;
-// }
+
+.tab-label:hover {
+  background-color: $white;
+  color: $gray;
+}
+
+.tab-label:not(:hover) {
+  text-decoration: none;
+}
+
 .tab-content {
   width: 100%;
   display: none;

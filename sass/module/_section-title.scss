@@ -15,7 +15,7 @@
   font-size: rem(20);
   letter-spacing: calc(2 / 20) * 1em;
   text-align: center;
-  font-weight: $normal;
+  font-weight: $regular;
   @include mq(md) {
     font-size: rem(30);
     letter-spacing: calc(0.5 / 30) * 1em;
@@ -32,7 +32,7 @@
   opacity: 0.2;
   text-transform: capitalize;
   z-index: -1;
-  font-weight: $normal;
+  font-weight: $regular;
   @include mq(md) {
     font-size: rem(110);
     transform: initial;

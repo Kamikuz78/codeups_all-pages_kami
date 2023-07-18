@@ -17,21 +17,12 @@
   }
 }
 
-.news__body {
+.news__items {
   margin: 0 rem(19.5);
   @include mq(md) {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-  }
-}
-
-.news__quote {
-  @include mq(md) {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    height: inherit;
   }
 }
 

@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .pagination__list {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   gap: 0 rem(16);
@@ -10,9 +10,9 @@
 
 .pagination__item {
   display: inline-block;
+  grid-row: 1;
   justify-content: center;
   text-align: center;
-  // max-width: rem(24);
   max-height: rem(24);
   line-height: 1;
   padding: rem(3) rem(6.5);
@@ -22,6 +22,11 @@
   @include mq(md) {
     transition: 0.3s;
   }
+}
+
+.pagination__list--trio {
+  grid-template-columns: rem(71) rem(71) rem(71);
+  gap: 0 rem(48);
 }
 
 .pagination__item:hover {
@@ -34,7 +39,7 @@
 }
 
 .pagination__item--current {
-  background-color: $yellow;
+  background-color: $white;
   color: $gray;
   pointer-events: none;
 }
@@ -42,10 +47,10 @@
 .pagination__item--prev,
 .pagination__item--next {
   display: inline-block;
-  gap: 0 rem(24);
   justify-content: center;
-  padding: rem(3) rem(13);
   line-height: 1;
+  letter-spacing: rem(2);
+  font-weight: $regular;
 }
 .pagination__item--prev {
   margin-right: rem(8);
@@ -53,4 +58,11 @@
 
 .pagination__item--next {
   margin-left: rem(8);
+}
+
+.blog-detail__button-wrapper {
+  margin-top: rem(124);
+  @include mq(md) {
+    margin-top: rem(104);
+  }
 }

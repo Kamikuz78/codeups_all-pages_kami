@@ -39,7 +39,7 @@
   <header class="header header-layout js-header">
     <div class="header__inner">
       <div class="header__logo">
-        <a href="#" class="header__link">
+        <a href="/" class="header__link">
           <img src="images/common/CodeUps.png" alt="logo">
           <span class="visually-hidden">CodeUps</span>
         </a>
@@ -53,7 +53,7 @@
       <nav class="header__pc-nav pc-nav">
         <ul class="pc-nav__items">
           <li class="pc-nav__item">
-            <a href="news.html">お知らせ</a>
+            <a href="home.html">お知らせ</a>
           </li>
           <li class="pc-nav__item">
             <a href="content.html">事業内容</a>
@@ -65,7 +65,7 @@
             <a href="overview.html">企業概要</a>
           </li>
           <li class="pc-nav__item">
-            <a href="blog.html">ブログ</a>
+            <a href="page-blog.html">ブログ</a>
           </li>
           <li class="pc-nav__item pc-nav__item--white">
             <a href="contact.html">お問い合わせ</a>
@@ -79,7 +79,7 @@
             <a href="#">トップ</a>
           </li>
           <li class="drawer__item">
-            <a href="news.html">お知らせ</a>
+            <a href="home.html">お知らせ</a>
           </li>
           <li class="drawer__item">
             <a href="content.html">事業内容</a>
@@ -91,7 +91,7 @@
             <a href="overview.html">企業概要</a>
           </li>
           <li class="drawer__item">
-            <a href="blog.html">ブログ</a>
+            <a href="page-blog.html">ブログ</a>
           </li>
           <li class="drawer__item">
             <a href="contact.html">お問い合わせ</a>
@@ -105,11 +105,11 @@
 
 
     <!-- パンくずリスト セクション -->
-    <section class="breadcrumb blog-detail__breadcrumb">
+    <section class="breadcrumb breadcrumb-layout">
       <div class="breadcrumb__inner inner">
         <ol class="breadcrumb__body">
           <li><a href="index.html">トップ</a></li>
-          <li><a href="blog.html">ブログ記事詳細</a></li>
+          <li><a href="page-blog.html">ブログ記事詳細</a></li>
         </ol>
       </div>
     </section>
@@ -118,7 +118,117 @@
     <section class="single-body single-body-layout">
       <div class="single-body__inner">
         <div class="single-body__title">
-          <h1>タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります</h1>
+          <h1>タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</h1>
+        </div>
+        <div class="single-body__meta">
+          <div class="news-content__info">
+            <time datetime="2023-07-16" class="news-content__date">2023.07.16</time>
+            <div class="news-content__category">カテゴリ１</div>
+          </div>
+        </div>
+        <div class="single-body__image">
+          <img src="src/images/common/blog-detail_01.jpg" alt="会議室での発表の写真">
+        </div>
+        <div class="single-body__content">
+          <p>
+            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+          </p>
+          <h2>見出し2</h2>
+          <p>
+            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+          </p>
+          <h3><span class="single-body__underline">見出し3見出し3見出し3</span></h3>
+          <p>
+            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+          </p>
+        </div>
+        <div class="single-body__image">
+          <img src="src/images/common/blog-detail_02.jpg" alt="壁かけで整頓された文具の写真">
+        </div>
+        <div class="single-body__content">
+          <p>・リストが入ります。リストが入ります。リストが入ります。リストが入ります。<br>
+            ・リストが入ります。リストが入ります。リストが入ります。リストが入ります。<br>
+            ・リストが入ります。リストが入ります。リストが入ります。リストが入ります。<br>
+            ・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</p>
+        </div>
+        <div class="single-body__content">
+          <p>１リストが入ります。リストが入ります。リストが入ります。リストが入ります。<br>
+            ２リストが入ります。リストが入ります。リストが入ります。リストが入ります。<br>
+            ３リストが入ります。リストが入ります。リストが入ります。リストが入ります。<br>
+            ４リストが入ります。リストが入ります。リストが入ります。リストが入ります。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ページナビゲーション -->
+    <div class="blog-detail__pagination pagination">
+      <ul class="pagination__list pagination__list--trio">
+        <li class="pagination__item "><a href="#">PREV</a></li>
+        <li class="pagination__item pagination__item--center"><a href="#">一覧</a></li>
+        <li class="pagination__item "><a href="#">NEXT</a></li>
+      </ul>
+    </div>
+
+    <!-- 関連記事ボタン -->
+    <div class="blog-detail__button-wrapper inner">
+      <a href="#" class="common-button common-button--article">関連記事</a>
+    </div>
+    <!-- cards -->
+    <section class="blog-detail-article blog-detail-article-layout">
+      <div class="blog-detail-article__inner inner">
+        <div class="blog-detail-article__cards cards">
+          <!-- card -->
+          <a href="#" class="cards__item card">
+            <div class="card__img">
+              <img src="images/common/works-card_01.jpg" alt="コードが映った画面の写真">
+            </div>
+            <div class="card__body">
+              <h4 class="card__title card__title--article">タイトルが入ります。タイトルが入ります。</h4>
+            </div>
+            <div class="card__info">
+              <div class="card__category">カテゴリ</div>
+              <time datetime="2023-04-19" class="card__date">2023.04.19</time>
+            </div>
+          </a>
+          <!-- card -->
+          <a href="#" class="cards__item card">
+            <div class="card__img">
+              <img src="images/common/works-card_02.jpg" alt="コードが映った画面の写真">
+            </div>
+            <div class="card__body">
+              <h4 class="card__title card__title--article">タイトルが入ります。タイトルが入ります。</h4>
+            </div>
+            <div class="card__info">
+              <div class="card__category">カテゴリ</div>
+              <time datetime="2023-04-19" class="news-content__date">2023.04.19</time>
+            </div>
+          </a>
+          <!-- card -->
+          <a href="#" class="cards__item card">
+            <div class="card__img">
+              <img src="images/common/works-card_04.jpg" alt="コードが映った画面の写真">
+            </div>
+            <div class="card__body">
+              <h4 class="card__title card__title--article">タイトルが入ります。タイトルが入ります。</h4>
+            </div>
+            <div class="card__info">
+              <div class="card__category">カテゴリ</div>
+              <time datetime="2023-04-19" class="news__date">2023.04.19</time>
+            </div>
+          </a>
+          <!-- card -->
+          <a href="#" class="cards__item card">
+            <div class="card__img">
+              <img src="images/common/works-card_03.jpg" alt="コードが映った画面の写真">
+            </div>
+            <div class="card__body">
+              <h4 class="card__title card__title--article">タイトルが入ります。タイトルが入ります。</h4>
+            </div>
+            <div class="card__info">
+              <div class="card__category">カテゴリ</div>
+              <time datetime="2023-04-19" class="news__date">2023.04.19</time>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -153,7 +263,7 @@
             <a href="/">トップ</a>
           </li>
           <li class="footer__item">
-            <a href="news.html">お知らせ</a>
+            <a href="home.html">お知らせ</a>
           </li>
           <li class="footer__item">
             <a href="content.html">事業内容</a>
@@ -165,7 +275,7 @@
             <a href="overview.html">企業概要</a>
           </li>
           <li class="footer__item">
-            <a href="blog.html">ブログ</a>
+            <a href="page-blog.html">ブログ</a>
           </li>
           <li class="footer__item">
             <a href="contact.html">お問い合わせ</a>
